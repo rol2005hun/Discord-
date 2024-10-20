@@ -1,0 +1,230 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #202225, #2f3136);
+    color: #fff;
+}
+
+.servers {
+    background-color: #2f3136;
+    box-shadow: 0.125em 0 0.3125em rgba(0, 0, 0, 0.5);
+    padding: 1em 0;
+}
+
+.server {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.server.selected {
+    border-left: 0.3em solid white;
+    border-radius: 1%;
+
+    img {
+        border-radius: 35%;
+    }
+}
+
+
+.server img {
+    width: 3.125em;
+    border-radius: 50%;
+
+    &:hover {
+        border-radius: 35%;
+    }
+}
+
+.category {
+    margin-top: 1em;
+    padding-bottom: 0.5em;
+    
+    h4 {
+        font-size: 1.2em;
+        color: #fff;
+        margin-bottom: 0.5em;
+    }
+}
+
+.channels {
+    display: flex;
+    flex-direction: column;
+    width: 12em;
+    background-color: #2f3136;
+    box-shadow: 0.125em 0 0.3125em rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+
+.channel {
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5em;
+    background: none;
+    color: #b9bbbe;
+    font-size: 1.1em;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+
+    &::before {
+        content: "# ";
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: #40444b;
+    }
+
+    &-info {
+        padding: 1em;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.current-user {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    img {
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 50%;
+        margin-right: 0.625em;
+    }
+}
+
+.chatwall {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #36393f;
+    padding: 1em;
+}
+
+.navbar {
+    margin-top: -1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 0.0625em solid #ccc;
+    
+    button {
+        border: none;
+        background: none;
+        color: white;
+        font-size: 1.3em;
+        cursor: pointer;
+    }
+
+    h2::before {
+        content: "# ";
+    }
+}
+
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    margin: 1em;
+    padding-right: 1em;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 0.375em;
+    color: #fff;
+}
+
+.message img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    margin-right: 0.625em;
+}
+
+.message-box {
+    display: flex;
+    align-items: center;
+    padding: 0.7em;
+    border-radius: 0.5em;
+
+    input {
+        flex: 1;
+        padding: 1em;
+        margin-right: 0.625em;
+        border-radius: 0.375em;
+        border: none;
+        background-color: #40444b;
+        color: #fff;
+    }
+
+    input:active, input:focus {
+        outline: none;
+    }
+
+    button {
+        display: none; // ezt lehet vissza kell majd tenni blockra
+        padding: 1em;
+        border: none;
+        background-color: #5865f2;
+        color: #fff;
+        border-radius: 0.375em;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    
+        &:hover {
+            background-color: #4752c4;
+        }
+    }
+}
+
+.info {
+    flex: 0 0 20%;
+    padding: 1em;
+    box-shadow: -0.125em 0 0.3125em rgba(0, 0, 0, 0.5);
+    background-color: #2f3136;
+    color: #fff;
+
+    .users {
+        margin-top: 1em;
+
+        .user {
+            padding: 0.5em;
+            display: flex;
+            align-items: center;
+        }
+        
+        img {
+            width: 2.5em;
+            height: 2.5em;
+            border-radius: 50%;
+            margin-right: 0.625em;
+        }
+    }
+}

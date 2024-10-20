@@ -1,0 +1,13 @@
+body.halloween {
+    background-image: linear-gradient(red, darkred);
+    filter: grayscale(1) invert(1) brightness(1.1);
+    mix-blend-mode: luminosity;
+    
+    * {
+        font-family: Nosifer !important;
+    }
+
+    .auth-page {
+        max-width: 30em;
+    }
+}

@@ -1,0 +1,91 @@
+.auth-page {
+    max-width: 25em;
+    margin: 0 auto;
+    padding: 2em;
+    background: white;
+    border-radius: 0.625em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+
+    h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+        color: #333;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            margin-bottom: 1em;
+            width: 100%;
+
+            label {
+                display: block;
+                margin-bottom: 0.5em;
+                font-weight: bold;
+                color: #555;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.5em;
+                border: 0.0625em solid #ccc;
+                border-radius: 0.3125em;
+                font-size: 1em;
+            }
+        }
+
+        button {
+            background: #007bff;
+            border: none;
+            border-radius: 0.375em;
+            box-shadow: rgba(0, 0, 0, 0.1) 0.0625em 0.125em 0.25em;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 1em;
+            font-weight: 800;
+            line-height: 1em;
+            min-height: 2.5em;
+            padding: 0.75em 0.875em;
+            text-align: center;
+            vertical-align: middle;
+
+            &:hover, &:active {
+                background-color: #0056b3;
+                background-position: 0 0;
+                color: white;
+            }
+
+            &:active {
+                opacity: .5;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 1em;
+        color: #555;
+
+        button {
+            background: none;
+            border: none;
+            color: #007bff;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 1em;
+            padding: 0;
+            text-decoration: none;
+
+            &:hover {
+                color: #0056b3;
+            }
+        }
+    }
+}
