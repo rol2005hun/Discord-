@@ -1,2 +1,3 @@
-# Discord-
+# Discord+
 to be continued...
+free te use, a simple discord clone in svelte and go/golang
